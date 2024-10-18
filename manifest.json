@@ -1,14 +1,14 @@
 {
     "manifest_version": 3,
-    "name": "Memo Extension",
+    "name": "Advanced Memo Extension",
     "version": "1.0",
-    "description": "Save selected text as a memo",
-    "permissions": ["activeTab", "storage", "contextMenus"],
-    "background": {
-      "service_worker": "background.js"
-    },
+    "description": "A Chrome extension for taking notes with text and images, including PDF export.",
+    "permissions": ["storage", "activeTab"],
     "action": {
       "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
     },
     "content_scripts": [
       {
